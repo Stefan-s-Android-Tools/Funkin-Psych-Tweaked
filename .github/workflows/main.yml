@@ -15,7 +15,7 @@ concurrency:
 
 env:
   HAXE_VERSION: '4.3.7'
-  HAXELIB_CACHE_REV: 'v4-cairo'
+  HAXELIB_CACHE_REV: 'v5-cairo'
 
 jobs:
   build:
