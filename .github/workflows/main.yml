@@ -101,6 +101,8 @@ jobs:
           haxelib --global install hmm --quiet
           haxelib --global run hmm install
           haxelib list
+          HXCPP="$(haxelib libpath hxcpp | head -n 1)"
+          (cd "$HXCPP/tools/hxcpp" && haxe compile.hxml)
 
       - name: Prepare Lime Git dependencies
         run: |
